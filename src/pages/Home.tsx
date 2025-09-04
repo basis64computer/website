@@ -1,14 +1,12 @@
 // import { Link } from 'react-router-dom';
 import bgImage from '../assets/img/home-bg.jpg';
 // import UserProfile from '../components/layout/UserProfile';
-import useAuth from '../state/useAuth';
+// import useAuth from '../state/useAuth';
 import { FeatureList } from '../components/layout/FeatureList';
 import { AnimatedCounter } from '../components/ui/AnimatedCounter';
 // import Login from './Login';
 
 export default function Home() {
-	const auth = useAuth();
-
 	return (
 		<>
 			<header className="relative min-h-[384px] py-4 sm:py-8 overflow-hidden flex items-center justify-center text-white">

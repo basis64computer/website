@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useAuth from "../../state/useAuth";
 import { DarkModeToggle } from "../ui/DarkModeToggle";
 // import GoogleLogin from "../ui/GoogleLogin";
 import { Button } from "../ui";
-import { Footer } from "./Footer";
 import useLoginModal from "../../state/useLoginModal";
 
 const UserProfile = () => {

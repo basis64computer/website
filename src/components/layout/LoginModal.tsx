@@ -9,7 +9,7 @@ import useAuth from '../../state/useAuth';
 
 export function LoginModal() {
     const loginModal = useLoginModal();
-    const [isDarkMode, setIsDarkMode] = useState(
+    const [isDarkMode] = useState(
         document.documentElement.classList.contains("dark")
     );
     return (

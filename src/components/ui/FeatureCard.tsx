@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface FeatureCardProps {
   to?: string;           // internal route
@@ -14,10 +14,10 @@ interface FeatureCardProps {
   onRequireLogin?: () => void; // 🔑 callback buat buka modal login
 }
 
-const categoryColors: Record<string, string> = {
+/*const categoryColors: Record<string, string> = {
   NLP: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300",
   Tools: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
-};
+};*/
 
 export const FeatureCard: React.FC<FeatureCardProps> = ({
   to,

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import GoogleLogin from "../ui/GoogleLogin";
 import { Button } from "../ui";
 import useAuth from "../../state/useAuth";
 import useLoginModal from "../../state/useLoginModal";
@@ -12,7 +11,7 @@ type SidebarProps = {
 
 export function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
   const location = useLocation();
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode] = useState(false);
   const loginModal = useLoginModal();
   const auth = useAuth();
 
@@ -24,7 +23,7 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
     }
   }, [darkMode]);
 
-  const toggleDarkMode = () => setDarkMode(!darkMode);
+  // const toggleDarkMode = () => setDarkMode(!darkMode);
 
   const isMobile = () => window.innerWidth < 640;
   const handleMenuClick = () => {
